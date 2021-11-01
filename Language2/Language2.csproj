@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="LanguageResources\Views\Home\Privacy.en.resx" />
+    <EmbeddedResource Remove="LanguageResources\Views\Home\Privacy.pl.resx" />
+    <EmbeddedResource Remove="LanguageResources\Views\Home\Privacy.ru.resx" />
+    <EmbeddedResource Remove="LanguageResources\Views\SharedResources.en.resx" />
+    <EmbeddedResource Remove="LanguageResources\Views\SharedResources.pl.resx" />
+    <EmbeddedResource Remove="LanguageResources\Views\SharedResources.ru.resx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="LanguageResources\Views\Home\Privacy.en.resx">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LanguageResources\Views\Home\Privacy.pl.resx">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LanguageResources\Views\Home\Privacy.ru.resx">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LanguageResources\Views.Home.Privacy.en.resx">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LanguageResources\Views.Home.Privacy.pl.resx">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LanguageResources\Views.Home.Privacy.ru.resx">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.5" />
+  </ItemGroup>
+
+</Project>
